@@ -1,0 +1,12 @@
+[package]
+name = "midplay-lua"
+version = "0.1.0"
+authors = ["Ruin0x11 <ipickering2@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+midplay = { git = "https://github.com/Ruin0x11/midiplay-rs", branch = "master" }
+mlua = { version = "0.5.3", features = ["lua51", "module"] }
